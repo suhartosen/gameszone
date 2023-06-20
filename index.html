@@ -1,100 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My SUHARTO Website</title>
+  <title>Suharto Gaming Website</title>
   <style>
-    .suharto-logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
-      font-family: 'Product Sans', Arial, sans-serif;
-      font-size: 68px;
-      font-weight: bold;
-    }
-
-    .suharto-blue {
-      color: #0062ff;
-    }
-
-    .suharto-red {
-      color: #eaff00;
-    }
-
-    .suharto-yellow {
-      color: #ff0000;
-    }
-
-    .suharto-green {
-      color: #00ff84;
-    }
-
-    header {
-      background-color: #ffffff;
-      padding: 20px;
-    }
-
-    .search-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .search-bar input[type="text"] {
-      padding: 5px;
-      border: none;
-      border-radius: 4px;
-      margin-right: 10px;
-    }
-
-    .search-bar button {
-      padding: 10px 14px;
-      background-color: #0062ff;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    main {
-      padding: 20px;
-      background-color: #eee585;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #2fff00;
-      padding: 20px;
-      text-align: center;
-    }
+    #replay-button {
+  font-size: 34px;
+  padding: 20px 30px;
+  background-color: red;
+  color: white;
+}
   </style>
-</head>
-<body>
-  <header>
-    <div class="suharto-logo">
-      <span class="suharto-blue">S</span>
-      <span class="suharto-red">U</span>
-      <span class="suharto-yellow">H</span>
-      <span class="suharto-blue">A</span>
-      <span class="suharto-green">R</span>
-      <span class="suharto-red">T</span>
-      <span class="suharto-yellow">O</span>
-    </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button>Search</button>
-    </div>
-  </header>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+    
+    }
+    h1 {
+      color: rgb(251, 255, 20);
+    }
   
-  <main>
-    <h1>Welcome To My Website!</h1>
-    <p>Suharto Sen is a skilled web developer known for his expertise in front-end technologies and commitment to delivering exceptional websites. With a strong eye for design and proficiency in HTML, CSS, and JavaScript, Suharto brings ideas to life through clean and efficient code. His attention to detail, effective communication, and collaborative approach make him a valuable asset in creating user-friendly and visually appealing websites. Suharto's passion for staying up-to-date with the latest industry trends ensures that his work is always at the forefront of web development standards, providing clients with innovative and impactful online solutions.</p>
-  </main>
+    </style>
+  <title>Suharto Gaming Website</title>
+  <link rel="stylesheet" type="text/css" href="GME.CSS">
+  
+</head>
 
-  <footer>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
-  </footer>
+<body>
+  <h1>Suharto Gaming Website</h1>
+  <div class="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+  
+  <div id="message"></div>
+  <div class="button-container">
+    <button id="replay-button" class="hidden">Play Again</button>
+  </div>
+  <div class="game-container">
+    <div class="board">
+      <!-- Tic Tac Toe board cells -->
+    </div>
+    <div class="message"></div>
+    <div id="replay-button" class="hidden">Play Again</div>
+    <button id="replay-button" class="hidden">Play Again</button>
+  </div>
+
+  <script src="GME.JS"></script>
 </body>
 </html>
